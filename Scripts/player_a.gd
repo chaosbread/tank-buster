@@ -1,4 +1,4 @@
-extends "res://Players/player.gd"
+extends "res://Scripts/player.gd"
 
 func _ready():
 	set_process(true)
@@ -13,4 +13,6 @@ func _process(delta):
 		turn_left(delta)
 	if(Input.is_action_pressed("player_a_turn_right")):
 		turn_right(delta)
+	if(Input.is_action_pressed("player_a_fire")):
+		fire()
 	update()

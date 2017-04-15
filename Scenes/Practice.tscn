@@ -1,10 +1,14 @@
-[gd_scene load_steps=11 format=1]
+[gd_scene load_steps=10 format=1]
 
-[ext_resource path="res://Scenes/Practice.gd" type="Script" id=1]
-[ext_resource path="res://Objects/Block.tscn" type="PackedScene" id=2]
-[ext_resource path="res://Players/player_a.tscn" type="PackedScene" id=3]
-[ext_resource path="res://Players/player_a.gd" type="Script" id=4]
-[ext_resource path="res://Players/player_b.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Scripts/Practice.gd" type="Script" id=1]
+[ext_resource path="res://Nodes/Block.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Nodes/player_a.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Nodes/player_b.tscn" type="PackedScene" id=4]
+
+
+
+
+
 
 [sub_resource type="RectangleShape2D" id=1]
 
@@ -124,9 +128,9 @@ transform/pos = Vector2( 352, 448 )
 [node name="Player A" parent="." instance=ExtResource( 3 )]
 
 transform/pos = Vector2( 224, 320 )
-script/script = ExtResource( 4 )
+transform/rot = -90.0
 
-[node name="Player B" parent="." instance=ExtResource( 5 )]
+[node name="Player B" parent="." instance=ExtResource( 4 )]
 
 transform/pos = Vector2( 768, 320 )
 
