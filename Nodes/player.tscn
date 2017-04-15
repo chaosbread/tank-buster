@@ -1,6 +1,8 @@
 [gd_scene load_steps=3 format=1]
 
-[ext_resource path="res://Players/player.png" type="Texture" id=1]
+[ext_resource path="res://Assets/Textures/player.png" type="Texture" id=1]
+
+
 
 [sub_resource type="CircleShape2D" id=1]
 
